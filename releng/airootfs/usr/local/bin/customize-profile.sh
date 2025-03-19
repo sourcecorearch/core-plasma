@@ -1,18 +1,21 @@
 #!/bin/bash
 
-# Executa o comando locale-gen para gerar as configurações de localização
+# locale-gen
 locale-gen
 
-# Executa o comando systemctl para habilitar o NetworkManager
+# systemctl para habilitar o NetworkManager
 systemctl enable NetworkManager
 
-# Popula repositórios
 pacman-key --init
 
-# Habilita o gdm para o Plasma
+systemctl enable firewalld.service
+
+systemctl enable bluetooth
+
+# Habilita sddm Plasma
 systemctl enable sddm.service
 
-## Script to perform several important tasks before `mkarchcoreiso` create filesystem image.
+## Script to perform several important tasks before `mkarcheosiso` create filesystem image.
 
 set -e -u
 

@@ -100,7 +100,7 @@ syslinux
 tcpdump
 terminus-font
 testdisk
-tpm2-tss
+#tpm2-tss
 udftools
 usb_modeswitch
 usbmuxd
@@ -110,7 +110,6 @@ vpnc
 wvdial
 xfsprogs
 xl2tpd
-fish
 
 # base
 base-devel
@@ -119,6 +118,7 @@ bzip2
 curl
 fakeroot
 firewalld
+python-pyqt6
 git
 git-lfs
 grub-btrfs
@@ -139,13 +139,11 @@ p7zip
 pacman-contrib
 pacman-mirrorlist
 pkgconf
-strace
-strongswan
-syncthing
-tree
 unrar
 wget
 zip
+avahi
+nss-mdns
 
 # XORG
 mesa
@@ -157,7 +155,6 @@ xorg-apps
 xorg-drivers
 xorg-xkill
 xorg-xinit
-xterm
 xorg-xrandr
 phodav
 
@@ -173,6 +170,10 @@ xf86-input-vmmouse
 spice-vdagent
 xf86-video-qxl
 
+## Bluetooth
+bluez
+bluez-utils
+
 ## -------- DISPLAY MANAGER -------- ##
 sddm
 sddm-kcm
@@ -184,32 +185,29 @@ bluedevil
 breeze-gtk
 dolphin
 dolphin-plugins
-#discover
+discover
+flatpak
 ffmpeg
 ffmpegthumbs
 filelight
 gwenview
 libwmf
 kate
-kbackup
 kcalc
-kclock
-kcolorchooser
+kde-cli-tools
 keditbookmarks
 kde-gtk-config
 kdeconnect
 kdegraphics-thumbnailers
+kdenetwork-filesharing
 kdeplasma-addons
-kfind
-keysmith
+kgamma
 kgpg
 kimageformats5
 kinfocenter
 kio-admin
 kio-gdrive
 konsole
-krdc
-krecorder
 kscreen
 ksystemlog
 kwalletmanager
@@ -218,35 +216,42 @@ okular
 plasma-browser-integration
 plasma-nm
 plasma-pa
-system-config-printer
-#simplescreenrecorder
-skanpage
 spectacle
-sweeper
+spectacle
 xsettingsd
+ttf-hack-nerd
+ttf-meslo-nerd
 
 xdg-user-dirs-gtk
 xdg-user-dirs
+xdg-desktop-portal-gtk
+xdg-desktop-portal-kde
+
+gvfs
+firefox
+firefox-i18n-es-es
+nano
+gparted
+timeshift
 
 # dependencias calamares
 kpmcore
 libpwquality
 yaml-cpp
-
-gvfs
-# firefox
-cachy-browser
-firefox-i18n-es-es
-nano
-gparted
-libnotify
-timeshift
-upower
-
-# custom repo 
-etcher-bin
-core-calamares
 mkinitcpio-openswap
 ckbcomp
-core-calamares-config
-downgrade
+
+# custom repo 
+core-calamares
+#core-calamares-config
+
+#-- localrepo
+garuda-wallpapers
+
+##### want to add/use the Chaotic repo
+chaotic-mirrorlist
+chaotic-keyring
+
+# paquetes Chaotic
+balena-etcher
+sublime-text-4

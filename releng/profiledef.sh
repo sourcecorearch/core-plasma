@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="corelinux"
+iso_name="eos-plasma"
 iso_label="ARCH_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
-iso_publisher="Core Linux <https://archlinux.org>"
-iso_application="Core Linux Live/Rescue"
+iso_publisher="EosOS Linux <https://archlinux.org>"
+iso_application="EosOS Linux Live/Rescue"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
 install_dir="arch"
 buildmodes=('iso')
